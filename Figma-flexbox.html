@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figma-flex</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .navbar{
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid lightgrey;
+            justify-content: space-between;
+        }
+        .logo{
+            width: 5vw;
+            height: 6vh;
+            border-right: 1px solid lightgray;
+            display: flex;
+            justify-content: center;
+        }
+        #Layer_1{
+            width: 30px;
+        }
+        .navleft{
+            display: flex;
+            align-items: center;
+        }
+        .navleft2{
+            display: flex;
+            padding: 10px;
+            justify-content: space-between  ;
+        }
+        .navmid2{
+            margin-left: 30px;
+        }
+        .navright{
+            display: flex;
+            align-items: center;
+        }
+        .signup{
+            border: 1px solid black;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        li{
+            margin: 10px;
+        }
+        .body{
+            width: 100vw;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .bodyleft{
+            display: flex;
+            width: 30%;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .bodyleft > *{
+            margin-top: 15px;
+        }
+        .tinjo{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .pics{
+            width: 40px;
+            height: 40px;
+            background-image: url(/Pics/IMG_8451.JPG);
+            background-size: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .button{
+            width: 150px;
+            background-color: rgb(79, 181, 240);
+            color: white;
+            font-size: 1em;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 7px;
+        }
+        .respondsivebutton{
+            display: none;
+        }
+        .bodyright{
+            background-image: url(/Pics/IMG_A83D1215F56E-1.jpeg);
+            width: 65%;
+            height: 67%;
+            background-size: cover;
+            border-radius: 10px;
+        }
+        .footer{
+
+            border-bottom: 1px solid lightgrey;
+        }
+        .footer a{
+            color: lightgrey;
+            padding: 9px;
+        }
+        .footer a:hover{
+            color: black;
+            font-weight: 500;
+            border-bottom: 2px solid black;
+        }
+        .des{
+            margin-left: 20px;
+        }
+        @media(max-width: 506px){
+            .navmid{
+                display: none;
+            }
+            .body{
+                flex-direction: column;
+            }
+            .bodyleft{
+                order: 2;
+                width: 100vw;
+                margin-left: 20px;
+            }
+            .bodyright{
+                order: 1;
+                width: 100vw;
+                background-size: contain;
+
+            }
+            .tinjo{
+                order: 2;
+            }
+            .buttoncontainer{
+                order: 3;
+                display: flex;
+            }
+            .button{
+                width: 60vw;
+            }
+            .respondsivebutton{
+                display: flex;
+                border: 1px solid lightgrey;
+                margin: 5px;
+                width: 35px;
+                height: 35px;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navleft">
+            <div class="logo">
+                <?xml version="1.0" ?><svg id="Layer_1" style="enable-background:new 0 0 3000 3000;" version="1.1" viewBox="0 0 3000 3000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><style type="text/css">
+                    .st0{fill:#0ACF83;}
+                    .st1{fill:#A259FF;}
+                    .st2{fill:#F24E1E;}
+                    .st3{fill:#FF7262;}
+                    .st4{fill:#1ABCFE;}
+                </style><title/><desc/><path class="st0" d="M1083.333374,2750c230,0,416.666626-186.666748,416.666626-416.666748v-416.666626h-416.666626  c-230.000061,0-416.666687,186.666626-416.666687,416.666626S853.333313,2750,1083.333374,2750z" id="path0_fill"/><path class="st1" d="M666.666687,1500c0-230,186.666626-416.666748,416.666687-416.666748H1500v833.333374  h-416.666626C853.333313,1916.666626,666.666687,1730,666.666687,1500z" id="path1_fill"/><path class="st2" d="M666.666687,666.666626C666.666687,436.666656,853.333313,250,1083.333374,250H1500  v833.333252h-416.666626C853.333313,1083.333252,666.666687,896.666626,666.666687,666.666626z" id="path1_fill_1_"/><path class="st3" d="M1500,250h416.666626c230.000122,0,416.666626,186.666656,416.666626,416.666626  s-186.666504,416.666626-416.666626,416.666626H1500V250z" id="path2_fill"/><path class="st4" d="M2333.333252,1500c0,230-186.666504,416.666626-416.666626,416.666626S1500,1730,1500,1500  s186.666626-416.666748,416.666626-416.666748S2333.333252,1270,2333.333252,1500z" id="path3_fill"/></svg>
+            </div>
+            <div class="navleft2">
+                <i class="bi bi-globe2"></i>
+                <p style="margin-left: 10px;">Community</p>
+            </div>
+        </div>
+        <div class="navmid">
+            <ul>
+                <li><a href="" class="navmid2">Libraries</a></li>
+                <li><a href="" class="navmid2">Design templates</a></li>
+                <li><a href="" class="navmid2">Whiteboarding</a></li>
+                <li><a href="" class="navmid2">More</a></li>
+            </ul>
+        </div>
+        <div class="navright">
+            <i class="bi bi-search" style="margin-right: 10px;"></i>
+            <ul>
+                <li><a href="">Log in</a></li>
+                <li><a href="" class="signup">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="body">
+            <div class="bodyleft">
+                <div class="tinjo">
+                    <div class="pics"></div>
+                    <p>Tinjo Thomas</p>
+                </div>
+                    <p style="font-size: 2em;">Portfolio UI - Web & Mobile</p>
+                <div class="text">
+                    <p style="color: lightgray; ">
+                    Design file · <i class="bi bi-heart"></i> 1.1k · <i class="bi bi-person"></i> 26.6k users
+                    </p>
+                </div>
+                <div class="buttoncontainer">
+                    <button class="button">Open in figma</button>
+                    <div class="respondsivebutton"><i class="bi bi-heart"></i></div>
+                    <div class="respondsivebutton"><i class="bi bi-bookmark"></i></div>
+                </div>
+            </div>
+            <div class="bodyright"></div>
+        </div>
+        <div class="footer">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Comment 33</a></li>
+            </ul>
+        </div>
+        <div class="des">
+            <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, veritatis.</p>
+            <br>
+            <h3>Ver1.1</h3>
+            <p>whats new</p>
+        </div>
+</body>
+</html>
